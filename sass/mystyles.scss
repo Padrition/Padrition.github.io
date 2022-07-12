@@ -8,23 +8,34 @@ $deep-blue: #0A2D3D;
 $soft-green: #64A696;
 $greenish-blue: #2A646D;
 $green-light: #A4CDB6;
-$light: #eff0eb;
+$light: #447090;
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
 $grey-dark: $greenish-blue;
 $grey-light: $green-light;
-$primary: $deep-blue;
+$primary: $greenish-blue;
 $link: $soft-green;
+$success: $light;
+$info: $deep-blue;
+$gray: $deep-blue ;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
-$title-color: #939491;
 
 // Update some of Bulma's component variables
-$body-background-color: $greenish-blue;
+$body-background-color: $gray;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
+
+.has-text-grey-light{
+    color: $green-light;
+}
+
+.is-rounded {
+    border-radius: 50%;
+    border: 5px solid $soft-green;
+}
 
 // Import only what you need from Bulma
 @import "../node_modules/bulma/sass/utilities/_all.sass";
@@ -32,7 +43,11 @@ $input-shadow: none;
 @import "../node_modules/bulma/sass/elements/button.sass";
 @import "../node_modules/bulma/sass/elements/container.sass";
 @import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/elements/box.sass";
+@import "../node_modules/bulma/sass/elements/notification.sass";
 @import "../node_modules/bulma/sass/form/_all.sass";
 @import "../node_modules/bulma/sass/components/navbar.sass";
 @import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
+@import "../node_modules/bulma/sass/grid/_all.sass";
+@import "../node_modules/bulma/sass/helpers/_all.sass";
